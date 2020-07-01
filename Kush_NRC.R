@@ -7,10 +7,10 @@ library(tm)
 library(wordcloud)
 library(syuzhet)
 
-consumer_key = 'aSXA7rS5SA2SOmrEmAMDDCSuM'
-consumer_secret = 'yjJIt0aXCOwiWlBVZIeRt4smGbYEmRlbEXDCAddnl90dCEyKFh'
-access_token = '4636485438-iV3osdnMFxJbv00JZK5sQcyburoYKKf5JdBcavk'
-access_secret = 'rbxXIaggXF3zg7h7lNHGusNpgk4TUbQQgRN1tNcjlFaBi'
+consumer_key = 'XXXX'
+consumer_secret = 'XXXXXX'
+access_token = 'XXXXXX'
+access_secret = 'XXXXXX'
 
 setup_twitter_oauth(consumer_key,consumer_secret,access_token, access_secret)
 
@@ -53,7 +53,7 @@ p <- plot_ly(emo_sum, x=~emotion, y=~count, type="bar", color=~emotion) %>%
   layout(xaxis=list(title=""), showlegend=FALSE,
          title="Emotion Type for hashtag: #covid19")
 p
-api_create(p,filename="Sentimentanalysis")
+#api_create(p,filename="Sentimentanalysis")
 ?api_create()
 
 
